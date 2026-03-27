@@ -1,36 +1,26 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { 
-  Search, 
-  Rocket, 
-  Share2, 
-  Mail, 
-  BarChart3, 
-  Target, 
-  ShieldCheck, 
-  ArrowRight,
-  TrendingUp,
-  MousePointerClick
+import {
+  Search,
+  Share2,
+  Mail,
+  BarChart3,
+  MousePointerClick,
 } from 'lucide-react';
 
 const MarketingHero = () => (
   <section className="relative pt-32 pb-20 overflow-hidden diagnostic-grid">
     <div className="max-w-7xl mx-auto px-6 relative z-10">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-3xl"
-      >
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container/10 border-l-2 border-secondary mb-6">
-          <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary font-label">Clinical Analysis Phase</span>
+          <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary font-label">Digital Marketing</span>
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold font-headline tracking-tight text-slate-900 mb-6">
-          Precision <span className="text-secondary">Marketing</span> Communications.
+          Marketing that brings <span className="text-secondary">traffic, leads and visibility</span>.
         </h1>
         <p className="text-xl text-on-surface-variant leading-relaxed font-body">
-          We don't just "advertise." We diagnose market inefficiencies and apply targeted digital interventions to maximize your fiscal health.
+          Internet Doctors provides SEO, PPC, email marketing, social media marketing, digital consultancy and related services for businesses that want measurable online growth.
         </p>
       </motion.div>
     </div>
@@ -38,10 +28,7 @@ const MarketingHero = () => (
 );
 
 const MarketingService = ({ icon: Icon, title, subtitle, description, stats, color }: any) => (
-  <motion.div 
-    whileHover={{ y: -5 }}
-    className="bg-white p-10 ghost-border relative overflow-hidden group h-full flex flex-col"
-  >
+  <motion.div whileHover={{ y: -5 }} className="bg-white p-10 ghost-border relative overflow-hidden group h-full flex flex-col">
     <div className={`absolute left-0 top-0 bottom-0 w-1 ${color}`}></div>
     <div className="flex items-center gap-4 mb-6">
       <div className="w-12 h-12 bg-slate-50 flex items-center justify-center text-secondary">
@@ -50,9 +37,7 @@ const MarketingService = ({ icon: Icon, title, subtitle, description, stats, col
       <span className="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">{subtitle}</span>
     </div>
     <h3 className="text-2xl font-bold font-headline mb-4 group-hover:text-secondary transition-colors">{title}</h3>
-    <p className="text-on-surface-variant font-body text-sm leading-relaxed mb-8 flex-grow">
-      {description}
-    </p>
+    <p className="text-on-surface-variant font-body text-sm leading-relaxed mb-8 flex-grow">{description}</p>
     <div className="pt-6 border-t border-slate-100">
       <div className="flex items-center justify-between">
         <div className="text-xs font-bold font-label text-secondary uppercase tracking-widest">{stats.label}</div>
@@ -62,20 +47,20 @@ const MarketingService = ({ icon: Icon, title, subtitle, description, stats, col
   </motion.div>
 );
 
-const ROISection = () => (
+const StrategySection = () => (
   <section className="py-32 bg-slate-900 text-white relative overflow-hidden">
     <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/10 skew-x-12 translate-x-1/2"></div>
     <div className="max-w-7xl mx-auto px-6 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 className="text-4xl md:text-5xl font-extrabold font-headline tracking-tight mb-8 uppercase">ROI-Based Diagnostics</h2>
+          <h2 className="text-4xl md:text-5xl font-extrabold font-headline tracking-tight mb-8 uppercase">Why digital marketing matters</h2>
           <p className="text-slate-400 text-lg font-body leading-relaxed mb-10">
-            Our strategic planning is focused entirely on the bottom line. Every marketing dollar spent is tracked through our 'Precision Lens' framework to ensure maximum sales conversion.
+            The uploaded content makes the case clearly: every large and small business needs digital marketing support. The goal is to reach the right market, drive qualified traffic and convert that traffic into sales.
           </p>
           <div className="space-y-8">
             {[
-              { label: 'Sales Conversion Increase', value: 88, color: 'bg-secondary' },
-              { label: 'Cost Per Acquisition Drop', value: 34, color: 'bg-on-tertiary-container' }
+              { label: 'Marketing Coverage', value: 100, color: 'bg-secondary' },
+              { label: 'Focus on ROI', value: 100, color: 'bg-on-tertiary-container' },
             ].map((bar, i) => (
               <div key={i}>
                 <div className="flex justify-between font-label text-[10px] uppercase tracking-widest mb-3 text-slate-400">
@@ -83,7 +68,7 @@ const ROISection = () => (
                   <span>{bar.value}%</span>
                 </div>
                 <div className="h-1 w-full bg-white/10">
-                  <motion.div 
+                  <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${bar.value}%` }}
                     transition={{ duration: 1, delay: i * 0.2 }}
@@ -99,13 +84,13 @@ const ROISection = () => (
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-white/5 backdrop-blur-md p-8 ghost-border">
             <div className="font-label text-[10px] text-secondary uppercase tracking-[0.2em] mb-3">Strategy</div>
-            <div className="text-2xl font-bold font-headline mb-4">ANALYSIS</div>
-            <p className="text-xs text-slate-400 uppercase leading-relaxed">Pre-campaign market auditing and competitor benchmarking.</p>
+            <div className="text-2xl font-bold font-headline mb-4">PLANNING</div>
+            <p className="text-xs text-slate-400 uppercase leading-relaxed">Brand strategy, market positioning and campaign planning.</p>
           </div>
           <div className="bg-white/5 backdrop-blur-md p-8 ghost-border mt-8">
             <div className="font-label text-[10px] text-secondary uppercase tracking-[0.2em] mb-3">Execution</div>
-            <div className="text-2xl font-bold font-headline mb-4">PRECISION</div>
-            <p className="text-xs text-slate-400 uppercase leading-relaxed">High-fidelity content deployment and bid optimization.</p>
+            <div className="text-2xl font-bold font-headline mb-4">DELIVERY</div>
+            <p className="text-xs text-slate-400 uppercase leading-relaxed">Traffic generation, lead nurturing and conversion-focused optimization.</p>
           </div>
         </div>
       </div>
@@ -117,36 +102,36 @@ export default function DigitalMarketing() {
   const services = [
     {
       icon: Search,
-      subtitle: "Optimization Protocol",
-      title: "Search Engine Optimization",
-      description: " technical audit, semantic keyword mapping, and authority-building interventions to enhance systemic visibility.",
-      stats: { label: "Avg. Visibility Lift", value: "+142%" },
-      color: "bg-secondary"
+      subtitle: 'Search Visibility',
+      title: 'SEO Services',
+      description: 'Search-engine optimization designed to help businesses get found, improve organic visibility and attract relevant prospects.',
+      stats: { label: 'Goal', value: 'Better ranking' },
+      color: 'bg-secondary',
     },
     {
       icon: MousePointerClick,
-      subtitle: "Acquisition Protocol",
-      title: "PPC & Bid Management",
-      description: "High-velocity lead acquisition via surgical bidding strategies and real-time conversion monitoring across all high-impact networks.",
-      stats: { label: "CPA Reduction", value: "-34%" },
-      color: "bg-slate-900"
+      subtitle: 'Paid Growth',
+      title: 'PPC and Paid Search Ads',
+      description: 'Pay-per-click services, paid search ads and campaign management focused on targeted traffic and measurable lead generation.',
+      stats: { label: 'Goal', value: 'Qualified leads' },
+      color: 'bg-slate-900',
     },
     {
       icon: Share2,
-      subtitle: "Resonance Protocol",
-      title: "Social Media Marketing",
-      description: "Brand communication strategies that synchronize with audience behavioral patterns across high-impact platforms.",
-      stats: { label: "Engagement Yield", value: "+42%" },
-      color: "bg-on-tertiary-container"
+      subtitle: 'Social Reach',
+      title: 'Social Media Marketing',
+      description: 'Campaigns that increase brand visibility on social platforms and help businesses engage audiences more consistently.',
+      stats: { label: 'Goal', value: 'Brand visibility' },
+      color: 'bg-on-tertiary-container',
     },
     {
       icon: Mail,
-      subtitle: "Retention Protocol",
-      title: "Email Lifecycle Automation",
-      description: "Trigger-based communication architectures that nurture leads from initial diagnosis to long-term loyalty.",
-      stats: { label: "Open Rate Efficacy", value: "32.4%" },
-      color: "bg-secondary"
-    }
+      subtitle: 'Retention',
+      title: 'Email Marketing',
+      description: 'Email campaigns and communication flows that support promotions, nurture leads and keep customers engaged.',
+      stats: { label: 'Goal', value: 'Repeat engagement' },
+      color: 'bg-secondary',
+    },
   ];
 
   return (
@@ -161,19 +146,19 @@ export default function DigitalMarketing() {
           </div>
         </div>
       </section>
-      <ROISection />
+      <StrategySection />
       <section className="py-32 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-extrabold font-headline tracking-tight mb-8">Ready for a Digital Audit?</h2>
+          <h2 className="text-4xl font-extrabold font-headline tracking-tight mb-8">360 digital marketing support</h2>
           <p className="text-on-surface-variant mb-12 font-body leading-relaxed">
-            Get a full diagnostic report of your current online presence and a prescribed marketing plan for growth.
+            We help businesses with SEO, PPC, email, social media, local listings, strategy planning and ROI-focused campaign execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="bg-slate-900 text-white px-10 py-4 font-headline font-bold text-lg hover:bg-secondary transition-all cursor-pointer">
-              Schedule Consultation
+              Start Marketing Consultation
             </Link>
             <Link to="/case-studies" className="bg-slate-100 text-slate-900 px-10 py-4 font-headline font-bold text-lg hover:bg-slate-200 transition-all cursor-pointer">
-              Download Case Studies
+              View Work Areas
             </Link>
           </div>
         </div>

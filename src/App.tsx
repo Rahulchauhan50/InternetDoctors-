@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import {
   BrowserRouter as Router,
   Routes,
@@ -397,23 +398,22 @@ const ScrollToTop = () => {
 
 const RouteMetadata = () => {
   const { pathname } = useLocation();
+  const metadata = routeMetadata[pathname] ?? defaultMetadata;
 
-  useEffect(() => {
-    const metadata = routeMetadata[pathname] ?? defaultMetadata;
-    document.title = `${metadata.title} | ${SITE_NAME}`;
-
-    let descriptionTag = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-
-    if (!descriptionTag) {
-      descriptionTag = document.createElement('meta');
-      descriptionTag.name = 'description';
-      document.head.appendChild(descriptionTag);
-    }
-
-    descriptionTag.content = metadata.description;
-  }, [pathname]);
-
-  return null;
+  return (
+    <Helmet>
+      <title>{`${metadata.title} | ${SITE_NAME}`}</title>
+      <meta name="description" content={metadata.description} />
+      <meta property="og:title" content={`${metadata.title} | ${SITE_NAME}`} />
+      <meta property="og:description" content={metadata.description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={SITE_NAME} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={`${metadata.title} | ${SITE_NAME}`} />
+      <meta name="twitter:description" content={metadata.description} />
+      <link rel="canonical" href={`https://www.internetdoctors.com${pathname}`} />
+    </Helmet>
+  );
 };
 
 export default function App() {

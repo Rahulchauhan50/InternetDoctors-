@@ -12,13 +12,14 @@ import {
   Mail,
   Rocket,
   Search,
+  Gamepad2,
   ShieldCheck,
   Smartphone,
   Target,
   Users,
 } from 'lucide-react';
 
-type AreaVariant = 'website' | 'development' | 'commerce' | 'marketing' | 'erp' | 'mobile';
+type AreaVariant = 'website' | 'development' | 'commerce' | 'marketing' | 'erp' | 'mobile' | 'game';
 
 type PanelProps = {
   children: React.ReactNode;
@@ -264,6 +265,13 @@ export const BusinessAreaVisual = ({ variant }: { variant: AreaVariant }) => {
       title: 'Android and iOS rollout planning',
       chips: ['Prototype', 'UI', 'Release'],
       stats: ['Device ready', 'Feature map'],
+    },
+    game: {
+      icon: Gamepad2,
+      eyebrow: 'Game Development',
+      title: 'Engaging interactive experiences',
+      chips: ['Gameplay', 'Design', 'Mechanics'],
+      stats: ['Player retention', 'Platform reach'],
     },
   }[variant];
 

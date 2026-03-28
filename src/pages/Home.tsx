@@ -9,6 +9,7 @@ import {
   ShieldCheck,
   ArrowRight,
   CheckCircle2,
+  Gamepad2,
 } from 'lucide-react';
 import { HeroWorkspaceVisual } from '../components/BusinessVisuals';
 
@@ -106,6 +107,7 @@ const Services = () => (
             { icon: Smartphone, title: 'Mobile App Development', desc: 'Consulting-led Android and iOS application development for startups, entrepreneurs and established businesses.', href: '/mobile-apps' },
             { icon: BarChart3, title: 'Digital Marketing', desc: 'SEO, PPC, email marketing, social media marketing and local business promotion designed to generate leads.', href: '/digital-marketing' },
             { icon: Database, title: 'ERP Solutions', desc: 'Custom ERP systems that simplify manual work, improve customer service and support business operations.', href: '/erp-solutions' },
+            { icon: Gamepad2, title: 'Game Development', desc: 'Engaging interactive experiences built for multiple platforms including mobile, PC, and web.', href: '/game-development' },
           ].map((service, i) => (
             <Link key={i} to={service.href} className="bg-white p-10 hover:bg-slate-50 transition-colors group block">
               <service.icon className="text-secondary mb-6 block" size={40} />
@@ -147,7 +149,7 @@ const WhyChoose = () => (
         </div>
       </div>
       <div className="flex flex-wrap justify-between items-center gap-12 opacity-70">
-        {['Website Design', 'Web Development', 'Mobile Apps', 'Digital Marketing', 'ERP Solutions'].map((item, i) => (
+        {['Website Design', 'Web Development', 'Mobile Apps', 'Digital Marketing', 'ERP Solutions', 'Game Development'].map((item, i) => (
           <div key={i} className="flex items-center gap-2 font-headline font-extrabold text-2xl tracking-tighter">
             {item.split(' ')[0]} <span className="text-secondary">{item.split(' ').slice(1).join(' ')}</span>
           </div>

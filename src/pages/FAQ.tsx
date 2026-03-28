@@ -49,7 +49,7 @@ const FAQItem: React.FC<{ question: string; answer: string; index: number }> = (
 const FAQSection = () => {
   const [activeCategory, setActiveCategory] = useState('Website Design');
 
-  const categories = ['Website Design', 'Web Development', 'Mobile Apps', 'Digital Marketing', 'ERP Solutions'];
+  const categories = ['Website Design', 'Web Development', 'Mobile Apps', 'Digital Marketing', 'ERP Solutions', 'Game Development'];
 
   const faqs: Record<string, { q: string; a: string }[]> = {
     'Website Design': [
@@ -76,6 +76,11 @@ const FAQSection = () => {
       { q: 'What is the purpose of your ERP service?', a: 'To replace manual work, improve customer service and combine core business functions into a single system.' },
       { q: 'Can the ERP be customized?', a: 'Yes. The service description specifically highlights made-to-order ERP suites based on client requirements, timelines and budget.' },
       { q: 'Which modules can be included?', a: 'Examples listed in the uploaded content include sales, purchase, inventory, warehouse, supply chain, finance, HR, authentication, fixed assets and software administration.' },
+    ],
+    'Game Development': [
+      { q: 'What platforms do you develop games for?', a: 'We develop games for mobile (iOS & Android), PC, and web platforms, ensuring a seamless experience across all devices.' },
+      { q: 'What kind of game development approach do you follow?', a: 'Our process begins with collaboration on core mechanics, followed by iterative prototyping and staging to ensure engaging gameplay.' },
+      { q: 'Do you provide game design services?', a: 'Yes, our team handles everything from conceptualization and UI/UX design to programming and cross-platform launch.' },
     ],
   };
 

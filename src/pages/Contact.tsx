@@ -46,6 +46,7 @@ const ContactForm = () => (
                 <option>Digital Marketing</option>
                 <option>ERP Software</option>
                 <option>Lead Generation</option>
+                <option>Game Development</option>
               </select>
             </div>
             <div className="space-y-2">

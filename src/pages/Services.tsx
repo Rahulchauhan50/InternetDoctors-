@@ -5,14 +5,15 @@ import {
   Globe,
   BarChart3,
   Database,
-  ShieldCheck,
   Code2,
   Layers,
   ArrowRight,
+  Gamepad2,
+  ShieldCheck,
 } from 'lucide-react';
 import { BusinessAreaVisual } from '../components/BusinessVisuals';
 
-type ServiceVariant = 'website' | 'development' | 'commerce' | 'marketing' | 'erp';
+type ServiceVariant = 'website' | 'development' | 'commerce' | 'marketing' | 'erp' | 'game';
 
 const ServicesHero = () => (
   <section className="relative pt-32 pb-20 overflow-hidden diagnostic-grid">
@@ -176,6 +177,21 @@ export default function Services() {
       ],
       visual: 'erp',
       href: '/erp-solutions',
+    },
+    {
+      icon: Gamepad2,
+      subtitle: 'Game Development',
+      title: 'Engaging games for multiple platforms',
+      description: 'We develop immersive mobile, PC, and web games. Our team handles everything from initial concept and design to programming, testing, and platform launch.',
+      features: [
+        'Mobile and web game development',
+        'Interactive gameplay mechanics',
+        'Cross-platform compatibility',
+        'Iterative prototyping and testing',
+      ],
+      visual: 'game',
+      href: '/game-development',
+      reverse: true,
     },
   ];
 

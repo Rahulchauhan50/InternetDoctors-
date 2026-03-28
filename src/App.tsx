@@ -21,6 +21,7 @@ import {
   BarChart3,
   Zap,
   ShieldCheck,
+  Gamepad2,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -35,6 +36,7 @@ import ERPSolutions from './pages/ERPSolutions';
 import FAQ from './pages/FAQ';
 import MobileApps from './pages/MobileApps';
 import SaaSLeadGen from './pages/SaaSLeadGen';
+import GameDevelopment from './pages/GameDevelopment';
 import logo from './assets/logo.png';
 
 const SITE_NAME = 'Internet Doctors';
@@ -80,6 +82,11 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
     title: 'Lead Generation Services for Software and Digital Businesses',
     description:
       'Generate qualified leads for website design, web development, mobile app, SaaS and digital service businesses with Internet Doctors.',
+  },
+  '/game-development': {
+    title: 'Game Development Services',
+    description:
+      'Internet Doctors provides engaging game development services for mobile, PC, and web platforms.',
   },
   '/case-studies': {
     title: 'Work and Capability Areas',
@@ -151,6 +158,7 @@ const Navbar = () => {
     { title: 'Digital Marketing', href: '/digital-marketing', icon: BarChart3, desc: 'SEO, PPC, email and social growth.' },
     { title: 'ERP Solutions', href: '/erp-solutions', icon: Database, desc: 'Custom business management systems.' },
     { title: 'Lead Generation', href: '/saas-lead-gen', icon: Zap, desc: 'Qualified leads for software and service brands.' },
+    { title: 'Game Development', href: '/game-development', icon: Gamepad2, desc: 'Engaging mobile and web games.' },
   ];
 
   const navLinks = [
@@ -186,7 +194,7 @@ const Navbar = () => {
             </Link>
 
             <div className="relative group" onMouseEnter={() => setIsMegaMenuOpen(true)} onMouseLeave={() => setIsMegaMenuOpen(false)}>
-              <button className={`flex items-center gap-1 font-bold font-headline transition-colors cursor-pointer ${location.pathname.includes('services') || location.pathname.includes('apps') || location.pathname.includes('marketing') || location.pathname.includes('erp') || location.pathname.includes('saas') ? 'text-secondary' : 'text-slate-500 hover:text-secondary'}`}>
+              <button className={`flex items-center gap-1 font-bold font-headline transition-colors cursor-pointer ${location.pathname.includes('services') || location.pathname.includes('apps') || location.pathname.includes('marketing') || location.pathname.includes('erp') || location.pathname.includes('saas') || location.pathname.includes('game') ? 'text-secondary' : 'text-slate-500 hover:text-secondary'}`}>
                 Services <ChevronDown size={14} className={`transition-transform duration-300 ${isMegaMenuOpen ? 'rotate-180' : ''}`} />
               </button>
 
@@ -347,6 +355,7 @@ const Footer = () => (
               <li><Link to="/digital-marketing" className="text-sm text-slate-400 hover:text-white transition-colors font-body">Digital Marketing</Link></li>
               <li><Link to="/erp-solutions" className="text-sm text-slate-400 hover:text-white transition-colors font-body">ERP Solutions</Link></li>
               <li><Link to="/saas-lead-gen" className="text-sm text-slate-400 hover:text-white transition-colors font-body">Lead Generation</Link></li>
+              <li><Link to="/game-development" className="text-sm text-slate-400 hover:text-white transition-colors font-body">Game Development</Link></li>
             </ul>
           </div>
 
@@ -424,6 +433,7 @@ export default function App() {
               <Route path="/erp-solutions" element={<ERPSolutions />} />
               <Route path="/mobile-apps" element={<MobileApps />} />
               <Route path="/saas-lead-gen" element={<SaaSLeadGen />} />
+              <Route path="/game-development" element={<GameDevelopment />} />
               <Route path="/case-studies" element={<CaseStudies />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/contact" element={<Contact />} />

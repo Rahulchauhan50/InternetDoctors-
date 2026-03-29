@@ -89,30 +89,30 @@ export const portfolioData: PortfolioItem[] = [
   createItem('https://www.lakeshorelearning.com/', 'E-Commerce', 'Lakeshore Learning'),
   createItem('https://www.rei.com/', 'E-Commerce', 'REI Co-op'),
   createItem('https://theteashelf.com/', 'E-Commerce', 'The Tea Shelf'),
-  createItem('https://flexifabrics.com/', 'E-Commerce', 'Flexi Fabrics'),
+
 
   // Automotive
-  createItem('http://xcarz.in/', 'Automotive', 'Xcarz'),
+
   createItem('https://www.carx.com/', 'Automotive', 'CarX Auto Service'),
-  createItem('http://www.fulltank.in/', 'Automotive', 'Full Tank'),
+
   createItem('https://www.execucar.com/', 'Automotive', 'ExecuCar'),
   createItem('https://bullchaser.in/', 'Automotive', 'Bull Chaser'),
 
   // Spa & Salon
   createItem('https://www.bodycraft.co.in/', 'Spa & Salon', 'Bodycraft Clinic'),
   createItem('http://www.uspasalonandmore.com/', 'Spa & Salon', 'U Spa Salon'),
-  createItem('http://www.geetanjalisalon.com/', 'Spa & Salon', 'Geetanjali Salon'),
+
   createItem('https://www.seaspasalonmv.com/', 'Spa & Salon', 'Sea Spa Salon'),
   createItem('http://gervaiseugene.com/', 'Spa & Salon', 'Gervais Eugene'),
-  createItem('https://accoladessalonspa.com/', 'Spa & Salon', 'Accolades Salon & Spa'),
+
 
   // Health & Clinics
-  createItem('https://www.taohealthandfitness.com/', 'Health & Clinics', 'Tao Health & Fitness'),
-  createItem('https://www.rosemont.com/health-fitness/', 'Health & Clinics', 'Rosemont Health'),
+
+
   createItem('https://anschutzwellness.com/', 'Health & Clinics', 'Anschutz Wellness'),
-  createItem('http://www.beniciahealthandfitnessclub.com/', 'Health & Clinics', 'Benicia Health & Fitness'),
-  createItem('http://www.exertec.com/', 'Health & Clinics', 'Exertec Fitness'),
-  createItem('https://healthandfitnessohio.com/', 'Health & Clinics', 'Health & Fitness Ohio'),
+
+
+
   createItem('http://www.dciinc.org/', 'Health & Clinics', 'DCI Clinics'),
   createItem('https://www.parknicollet.com/', 'Health & Clinics', 'Park Nicollet'),
   createItem('https://www.childrensmn.org/', 'Health & Clinics', 'Children\'s Minnesota'),
@@ -124,7 +124,7 @@ export const portfolioData: PortfolioItem[] = [
 
   // E-Learning
   createItem('https://quizizz.com/', 'E-Learning', 'Quizizz'),
-  createItem('http://www.smart-academy.in/', 'E-Learning', 'Smart Academy'),
+
   createItem('http://ask-elearning.com/', 'E-Learning', 'Ask E-Learning'),
   createItem('https://www.padi.com/', 'E-Learning', 'PADI'),
   createItem('http://www.onlineformapro.com/', 'E-Learning', 'Onlineformapro'),
@@ -151,7 +151,7 @@ export const portfolioData: PortfolioItem[] = [
   createItem('https://www.eazystock.com', 'Industry & B2B', 'EazyStock'),
 
   // Games & Apps
-  createItem('https://play.google.com/store/apps/details?id=za.co.nedbank', 'Games & Apps', 'Nedbank App'),
+
   createItem('https://play.google.com/store/apps/details?id=com.wordgame.wordgrid.puzzle', 'Games & Apps', 'Word Grid Puzzle'),
   createItem('https://play.google.com/store/apps/details?id=com.wordgame.crossword.word.multiplayer', 'Games & Apps', 'Multiplayer Crossword'),
   createItem('https://play.google.com/store/apps/details?id=com.wordlane.wordgame.puzzles', 'Games & Apps', 'Word Lane Puzzles'),
@@ -159,6 +159,6 @@ export const portfolioData: PortfolioItem[] = [
   createItem('https://play.google.com/store/apps/details?id=com.MobileSportsTime.MiniGolfInCartoonForest', 'Games & Apps', 'Mini Golf Cartoon Forest'),
   createItem('https://play.google.com/store/apps/details?id=com.elixir.dicefriends', 'Games & Apps', 'Dice Friends'),
   createItem('https://www.oculus.com/experiences/quest/8888584494500341/', 'Games & Apps', 'Oculus VR Game'),
-  createItem('https://play.google.com/store/apps/details?id=com.fabnie.user', 'Games & Apps', 'Fabnie Delivery'),
+
   createItem('https://itunes.apple.com/us/app/world-startup-%20xpo/id1166151649', 'Games & Apps', 'Startup Xpo App'),
 ];

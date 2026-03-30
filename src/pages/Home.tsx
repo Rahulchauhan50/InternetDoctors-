@@ -12,6 +12,7 @@ import {
   Gamepad2,
 } from 'lucide-react';
 import { HeroWorkspaceVisual } from '../components/BusinessVisuals';
+import { ClientLogosSlider } from '../components/ClientLogosSlider';
 
 const Hero = () => (
   <section className="relative min-h-[800px] flex items-center overflow-hidden diagnostic-grid pt-16">
@@ -179,6 +180,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <ClientLogosSlider />
       <Stats />
       <Services />
       <WhyChoose />

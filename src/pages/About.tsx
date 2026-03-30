@@ -15,6 +15,7 @@ import {
   DeliveryFlowVisual,
   TeamCollaborationVisual,
 } from '../components/BusinessVisuals';
+import { ClientLogosSlider } from '../components/ClientLogosSlider';
 
 const Hero = () => (
   <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-surface">
@@ -201,6 +202,7 @@ export default function About() {
   return (
     <div className="bg-white">
       <Hero />
+      <ClientLogosSlider />
       <Mission />
       <Specialists />
       <Timeline />

@@ -1,6 +1,37 @@
 {
   "buildCommand": "tsc -b && vite build",
   "outputDirectory": "dist",
+
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.internetdoctors.in"
+        }
+      ],
+      "destination": "https://internetdoctors.in/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "internetdoctors.in"
+        },
+        {
+          "type": "header",
+          "key": "x-forwarded-proto",
+          "value": "http"
+        }
+      ],
+      "destination": "https://internetdoctors.in/$1",
+      "permanent": true
+    }
+  ],
+
   "rewrites": [
     {
       "source": "/(.*)",

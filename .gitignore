@@ -7,3 +7,6 @@ coverage/
 .env*
 !.env.example
 src/assets/screenshots/*
+.next/
+content/
+public//assets/screenshots/

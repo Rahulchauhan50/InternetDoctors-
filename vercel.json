@@ -1,7 +1,4 @@
 {
-  "buildCommand": "tsc -b && vite build",
-  "outputDirectory": "dist",
-
   "redirects": [
     {
       "source": "/(.*)",
@@ -29,13 +26,6 @@
       ],
       "destination": "https://internetdoctors.in/$1",
       "permanent": true
-    }
-  ],
-
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }

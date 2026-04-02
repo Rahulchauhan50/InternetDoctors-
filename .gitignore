@@ -8,5 +8,6 @@ coverage/
 !.env.example
 src/assets/screenshots/*
 .next/
-content/
+content/*
+!content/*.ts
 public/assets/screenshots/

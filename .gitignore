@@ -9,4 +9,4 @@ coverage/
 src/assets/screenshots/*
 .next/
 content/
-public//assets/screenshots/
+public/assets/screenshots/
